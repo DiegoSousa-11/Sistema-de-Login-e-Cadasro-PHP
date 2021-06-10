@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/Icone Ki-pizza.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <div class="content">
+        <!-- Login screen header -->
+        <header>
+            <img src="img/Icone Ki-pizza.png" alt="icon_pizza">
+            <h1>Pizzaria</h1>
+        </header>
+
+        <!-- Login screen form -->
+        <form action="login.php" method="POST">
+            <section>
+                <label id="text_input" class="text_input">E-mail</label>
+                <input class="input" type="email" name="email" autocomplete="off" placeholder="E-mail" rel="E-mail">
+            </section>
+
+            <section>
+                <label id="text_input" class="text_input">Senha</label>
+                <input class="input password" type="password" name="password" placeholder="Senha" rel="Senha">
+                <!-- Forgot password? -->
+                <div class="forgot">
+                    <div class="vertical-line"></div>
+                    <a href="RecoverPassword/">Esqueceu?</a>
+                </div>
+                <!-- Register -->
+                <div class="register">
+                    <a href="Register/">Não tem uma conta? </a>
+                    <a href="Register/" style="color: #FF4E4E;">Cadastre-se</a>
+                </div>
+            </section>
+
+            <!-- Login button -->
+            <input class="button_submit" name="enter" type="submit" value="Acessar">
+        </form>
+    </div>
+    <script src="Js/script.js"></script>
+</body>
+</html>

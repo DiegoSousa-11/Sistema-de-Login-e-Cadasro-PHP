@@ -1,0 +1,21 @@
+.button_submit{
+    margin-top: 40px;
+}
+
+.content{
+    height: 400px;
+}
+
+.content header{
+    height: 25%;
+}
+
+@media (max-width: 600px) {
+    .content{
+        height: 300px;
+    }
+
+    .button_submit {
+        bottom: 0;
+    }
+}

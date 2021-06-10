@@ -1,0 +1,42 @@
+.button_submit{
+    margin-top: 30px;
+}
+
+form section{
+    margin-top: 0;
+}
+
+.content{
+    height: 650px;
+}
+
+.input_label_big{
+    width: 180px !important;
+}
+
+.button_submit{
+    bottom: 0;
+}
+
+@media (max-width: 800px)
+{
+    .content{
+        height: 530px;
+    }
+
+    form section input{
+        height: 50px;
+    }
+
+    .button_submit{
+        height: 50px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-height: 550px)
+{
+    .content{
+        margin-top: 30px;
+    }
+}   
