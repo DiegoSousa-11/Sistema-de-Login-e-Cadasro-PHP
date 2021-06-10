@@ -2,7 +2,7 @@
 //Get values ​​from the HTML
 $submit = $_POST['submit'];
 $email = $_POST['email'];
-$connect = mysqli_connect("sql309.epizy.com", "epiz_28814223", "5yhdJFtuR6FmXw", "epiz_28814223_Pizzaria"); //Effect the connecting with database
+$connect = mysqli_connect("localhost", "root", "", "pizzaria");  //Effect the connecting with database
 
 if(isset($submit))
 {
