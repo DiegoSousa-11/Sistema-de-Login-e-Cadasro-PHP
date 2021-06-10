@@ -3,7 +3,7 @@
 $email = $_POST['email'];
 $enter = $_POST['enter'];
 $password = md5($_POST['password']);
-$connect = mysqli_connect("sql309.epizy.com", "epiz_28814223", "5yhdJFtuR6FmXw", "epiz_28814223_Pizzaria");
+$connect = mysqli_connect("localhost", "root", "", "pizzaria"); 
 
 if(isset($enter))
 {
