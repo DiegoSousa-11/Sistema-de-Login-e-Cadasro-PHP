@@ -1,6 +1,6 @@
 <?php
     $key = $_GET['key'];
-    $connect = mysqli_connect("sql309.epizy.com", "epiz_28814223", "5yhdJFtuR6FmXw", "epiz_28814223_Pizzaria");
+    $connect = mysqli_connect("localhost", "root", "", "pizzaria"); 
     $check = mysqli_query($connect, "SELECT * FROM recover_password WHERE key_recover = '$key'") or die("Erro ao selecionar!!");
 
     //Get link key and check if it's is empty or not exist in database 
