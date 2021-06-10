@@ -4,7 +4,7 @@ $fullname = $_POST['fullname'];
 $email = $_POST['email'];
 $password = md5($_POST['password']); //md5 is used for encrypt user password
 $confirmPassword = md5($_POST['Confirmpassword']);
-$connect = mysqli_connect("sql309.epizy.com", "epiz_28814223", "5yhdJFtuR6FmXw", "epiz_28814223_Pizzaria"); //Connect site with database
+$connect = mysqli_connect("localhost", "root", "", "pizzaria");  //Connect site with database
 $query_select = "SELECT email FROM users WHERE email = '$email' "; //Command to the database execute
 $select = mysqli_query($connect, $query_select); //Is done the requested to database execute the command above
 $array = mysqli_fetch_array($select); //The database send the reply
